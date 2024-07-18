@@ -6,7 +6,7 @@ This project aims to predict the electricity bill of a building based on various
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Features Used](#features)
+- [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Model](#model)
@@ -16,7 +16,7 @@ This project aims to predict the electricity bill of a building based on various
 
 Accurate prediction of electricity bills is essential for budget planning and energy management. This project uses machine learning techniques to predict the electricity bill of a building. The model is trained using features that significantly influence electricity consumption.
 
-## Features Used
+## Features
 
 The dataset includes the following features:
 
