@@ -18,13 +18,19 @@ This project aims to predict the electricity bill of a building based on various
 
 Accurate prediction of electricity bills is essential for budget planning and energy management. This project uses machine learning techniques to predict the electricity bill of a building. The model is trained using features that significantly influence electricity consumption.
 
-## Features
+## Features Used
 
 The dataset includes the following features:
 
 - **Number of Fans**: The total number of fans in the building.
 - **Number of Lights**: The total number of lights in the building.
 - **Number of ACs**: The total number of air conditioners in the building.
+- **Refrigirator**: The total number of Refrigirators in the building.
+- **TV**: The total number of air TV's in the building.
+- **Monitor**: The total number of Monitors in the building.
+- **Montly Hours**:Number of Hours the building uses electricity each month. 
+- **Tarrif Rate**:Price charged by an electricity provider for the consumption of electricity.
+- **Months**: Number of months the building used Electricity.
 - **City**: The city where the building is located.
 - **Company of Electric Appliances**: The brand or company of the electric appliances used in the building.
 
@@ -40,8 +46,8 @@ pip install numpy pandas matplotlib scikit-learn
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/electricity-bill-prediction.git
-    cd electricity-bill-prediction
+    git clone https://github.com/svnsaisathvik/Predicting-the-Electricity-Bill
+    cd Predicting-the-Electricity-Bill
     ```
 
 2. Prepare your dataset and save it as `data.csv` in the project directory.
@@ -75,43 +81,7 @@ The model is trained on a dataset with the aforementioned features. The training
 4. Train the Linear Regression model on the training set.
 5. Evaluate the model on the testing set.
 
-### Example
-
-Below is an example of how to use the prediction script:
-
-```python
-import pandas as pd
-from sklearn.linear_model import LinearRegression
-
-# Load dataset
-data = pd.read_csv('data.csv')
-
-# Preprocess data
-# ...
-
-# Define features and target variable
-X = data[['Number_of_Fans', 'Number_of_Lights', 'Number_of_ACs', 'City', 'Company_of_Electric_Appliances']]
-y = data['Electricity_Bill']
-
-# Split data
-# ...
-
-# Train model
-model = LinearRegression()
-model.fit(X_train, y_train)
-
-# Make predictions
-predictions = model.predict(X_test)
-```
-
 ## Results
 
-The model's performance is evaluated using metrics such as Mean Absolute Error (MAE), Mean Squared Error (MSE), and R-squared (R²). Detailed results and visualizations are provided in the `results` directory.
+The model's performance is evaluated using metrics such as Mean Absolute Error (MAE), Mean Squared Error (MSE) and Root Mean Squared Error (RMSE)
 
-## Contributing
-
-Contributions are welcome! Please fork the repository and submit a pull request with your changes. For major changes, please open an issue first to discuss what you would like to change.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
