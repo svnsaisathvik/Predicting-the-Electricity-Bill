@@ -6,7 +6,7 @@ This project aims to predict the electricity bill of a building based on various
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Features Used](#features_used)
+- [Features Used](#features)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Model](#model)
